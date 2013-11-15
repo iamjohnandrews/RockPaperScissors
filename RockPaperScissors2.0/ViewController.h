@@ -10,4 +10,16 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *countDownLabel;
+@property (weak, nonatomic) IBOutlet UILabel *computerHandLabel;
+@property (weak, nonatomic) IBOutlet UILabel *playerHandLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *rockButtonOutlet;
+@property (weak, nonatomic) IBOutlet UIButton *paperButtonOutlet;
+@property (weak, nonatomic) IBOutlet UIButton *scissorsButtonOutlet;
+
+- (IBAction)rockButtonPressed:(id)sender;
+- (IBAction)paperButtonPressed:(id)sender;
+- (IBAction)scissorsButtonPressed:(id)sender;
+
 @end

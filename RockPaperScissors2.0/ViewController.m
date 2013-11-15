@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)rockButtonPressed:(id)sender {
+}
+
+- (IBAction)paperButtonPressed:(id)sender {
+}
+
+- (IBAction)scissorsButtonPressed:(id)sender {
+}
 @end
