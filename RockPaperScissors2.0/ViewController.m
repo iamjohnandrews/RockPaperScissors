@@ -13,18 +13,15 @@
 @end
 
 @implementation ViewController
+@synthesize rockButtonOutlet, paperButtonOutlet, scissorsButtonOutlet,startButtonOutlet, countDownLabel, playerHandLabel, computerHandLabel;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)rockButtonPressed:(id)sender {
 }
@@ -33,5 +30,8 @@
 }
 
 - (IBAction)scissorsButtonPressed:(id)sender {
+}
+
+- (IBAction)startButtonPressed:(id)sender {
 }
 @end

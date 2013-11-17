@@ -17,9 +17,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *rockButtonOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *paperButtonOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *scissorsButtonOutlet;
+@property (weak, nonatomic) IBOutlet UIButton *startButtonOutlet;
 
 - (IBAction)rockButtonPressed:(id)sender;
 - (IBAction)paperButtonPressed:(id)sender;
 - (IBAction)scissorsButtonPressed:(id)sender;
+- (IBAction)startButtonPressed:(id)sender;
 
 @end
