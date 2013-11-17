@@ -19,7 +19,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    
+    //creating round buttons
+    rockButtonOutlet.layer.borderWidth = 1.0;
+    rockButtonOutlet.layer.cornerRadius = 5.0;
+    rockButtonOutlet.layer.borderColor = [[UIColor whiteColor]CGColor];
+    
+    paperButtonOutlet.layer.borderWidth = 1.0;
+    paperButtonOutlet.layer.cornerRadius = 5.0;
+    paperButtonOutlet.layer.borderColor = [[UIColor whiteColor]CGColor];
+    
+    scissorsButtonOutlet.layer.borderColor = [[UIColor whiteColor]CGColor];
+    scissorsButtonOutlet.layer.cornerRadius = 5.0;
+    scissorsButtonOutlet.layer.borderWidth = 1.0;
+    
+    startButtonOutlet.layer.cornerRadius = 5.0;
+    startButtonOutlet.layer.borderWidth = 1.0;
+    startButtonOutlet.layer.borderColor = [[UIColor greenColor]CGColor];
 }
 
 
