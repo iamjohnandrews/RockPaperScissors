@@ -23,7 +23,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    choices = @[@"Rock", @"Paper", @"Scissors"];
+    count = 4;
     
     //creating round buttons
     rockButtonOutlet.layer.borderWidth = 1.0f;
@@ -46,44 +48,55 @@
 
 - (IBAction)rockButtonPressed:(id)sender {
     playerHandLabel.text = @"Rock";
+    [self winner];
 }
 
 - (IBAction)paperButtonPressed:(id)sender {
     playerHandLabel.text = @"Paper";
+    [self winner];
 }
 
 - (IBAction)scissorsButtonPressed:(id)sender {
     playerHandLabel.text = @"Scissors";
+    [self winner];
 }
 
 - (IBAction)startButtonPressed:(id)sender {
     //1. clear all labels
-    playerHandLabel.text = @"Player's results here";
-    computerHandLabel.text = @"CPU's results here";
+    playerHandLabel.text = @"Player's results";
+    computerHandLabel.text = @"CPU's results";
     
     //2. countDownLabel displays countdown clock
-    [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(countdownClock) userInfo:nil repeats:YES];
-    
-    //3. after countDownLabel = 0, computerHandLabel shows PC's choice and playerHandLabel displays player's choice
-    
-    //4. if player does not pick something before countdown clock reaches 0 then playerHandLabel displays "too slow"
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(countdownClock) userInfo:nil repeats:YES];
 }
 
 - (void)countdownClock
 {
     count--;
     [self updateCountDisplay];
-    
+    //3. after countDownLabel = 0, computerHandLabel shows PC's choice and playerHandLabel displays player's choice
     if (count == 0) {
         [timer invalidate];
+        //4. if player does not pick something before countdown clock reaches 0 then playerHandLabel displays "too slow"
+        if (count == 0 && [playerHandLabel.text isEqualToString:@"Player's results"]) {
+            playerHandLabel.text = @"Too Slow";
+        }
         count = 4;
         computerHandLabel.text = [choices objectAtIndex:arc4random() % 3];
+        NSLog(@"playerHandLabel value = %@", playerHandLabel.text);
     }
 }
 
 -(void)updateCountDisplay
 {
     countDownLabel.text = [NSString stringWithFormat:@"%i", count];
+}
+
+- (void)winner
+{
+    //5. Have the background and border of winner change
+    
+
 }
 
 @end
