@@ -21,6 +21,7 @@
 		8E806A601832E455007D05FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E806A421832E455007D05FA /* UIKit.framework */; };
 		8E806A681832E455007D05FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E806A661832E455007D05FA /* InfoPlist.strings */; };
 		8E806A6A1832E455007D05FA /* RockPaperScissors2_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E806A691832E455007D05FA /* RockPaperScissors2_0Tests.m */; };
+		B02C6F941886CA4A002B4333 /* MobEagle.m in Sources */ = {isa = PBXBuildFile; fileRef = B02C6F931886CA4A002B4333 /* MobEagle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8E806A651832E455007D05FA /* RockPaperScissors2.0Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RockPaperScissors2.0Tests-Info.plist"; sourceTree = "<group>"; };
 		8E806A671832E455007D05FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E806A691832E455007D05FA /* RockPaperScissors2_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockPaperScissors2_0Tests.m; sourceTree = "<group>"; };
+		B02C6F921886CA4A002B4333 /* MobEagle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobEagle.h; sourceTree = "<group>"; };
+		B02C6F931886CA4A002B4333 /* MobEagle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobEagle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				8E806A501832E455007D05FA /* Main.storyboard */,
 				8E806A531832E455007D05FA /* ViewController.h */,
 				8E806A541832E455007D05FA /* ViewController.m */,
+				B02C6F921886CA4A002B4333 /* MobEagle.h */,
+				B02C6F931886CA4A002B4333 /* MobEagle.m */,
 				8E806A561832E455007D05FA /* Images.xcassets */,
 				8E806A451832E455007D05FA /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E806A551832E455007D05FA /* ViewController.m in Sources */,
+				B02C6F941886CA4A002B4333 /* MobEagle.m in Sources */,
 				8E806A4F1832E455007D05FA /* AppDelegate.m in Sources */,
 				8E806A4B1832E455007D05FA /* main.m in Sources */,
 			);
@@ -460,6 +466,7 @@
 				8E806A6F1832E455007D05FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E806A701832E455007D05FA /* Build configuration list for PBXNativeTarget "RockPaperScissors2.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				8E806A721832E455007D05FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

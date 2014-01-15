@@ -43,6 +43,8 @@
     startButtonOutlet.layer.cornerRadius = 5.0f;
     startButtonOutlet.layer.borderWidth = 1.0f;
     startButtonOutlet.layer.borderColor = [[UIColor greenColor]CGColor];
+    
+    NSLog(@"Mobiquity is great");
 }
 
 
